@@ -65,5 +65,10 @@ s3=pd.concat([s2,sonuc3],axis=1)
 print(s3)
 
 
+from sklearn.model_selection import train_test_split#split=bölmek
+
+x_train, x_test, y_train,y_test =train_test_split(s2,sonuc3,test_size=0.33,random_state=0)
+
+
 
 
